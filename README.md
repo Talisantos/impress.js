@@ -1,14 +1,17 @@
-impress.js recopilation 
+impress.js recompilation 
 ============
 
 It's a recompilation of utilities that allows that the use of impress.js can be more comfortable
 
 **FEATURES**
 
-impress.js-progress by m42e https://github.com/m42e/impress.js-progress
-impress.js substeps by tehfoo https://github.com/tehfoo/impress.js
-impress presenter console by regebro https://github.com/regebro/impress-console
-mods by Talisantos https://github.com/Talisantos/impress.js
+impress.js-progress by m42e https://github.com/m42e/impress.js-progress .
+
+impress.js substeps by tehfoo https://github.com/tehfoo/impress.js .
+
+impress presenter console by regebro https://github.com/regebro/impress-console .
+
+mods by Talisantos https://github.com/Talisantos/impress.js .
 
 HOW TO USE IT
 ---------------
