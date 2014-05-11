@@ -90,8 +90,9 @@
         When creating your own presentation get rid of this file. Start from scratch, it's fun!
         
     -->
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    
+    <link href="css/impress.css" rel="stylesheet" />
+    <link href="css/impress-progress.css" rel="stylesheet" />
+	<link href="css/animate.css" rel="stylesheet" />
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
@@ -145,6 +146,10 @@
     right around the corner of this tag ;)
     
 -->
+<!-- To add progressbar and progress -->
+<div class="progressbar"><div></div></div>
+        <div class="progress"></div>
+
 <div id="impress">
 
     <!--
@@ -164,8 +169,27 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+    <div id="bored" class="step slide" data-x="-2000" data-y="-1500">
         <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+        <ul>
+        <div class="notes">
+                    <p>This is a note</p>
+                    <p>This is a note</p>
+                    <p>This is a note</p>
+                    <p>This is a note</p>
+                    <p>This is a note</p>
+                    <p>This is a note</p>
+        </div>
+    </div>
+
+	
+	
+    <div id="bored1" class="step slide" data-x="-1000" data-y="-1500">
+        <ul>
+            <li class="substep"> new </li>
+            <li class="substep"> substep </li>
+            <li class="substep"> added</li>
+        </ul>
     </div>
 
     <!--
@@ -360,8 +384,14 @@ if ("ontouchstart" in document.documentElement) {
     Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
     
 -->
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+<script type="text/javascript" src="js/impress.js"></script>
+    <script src="js/impress-progress.js"></script>
+    <script src="js/impressConsole.js"></script>
+    <script>
+       impress().init();
+       impressConsole().init();
+       impressConsole().open(); // If you want them to open automatically
+    </script>
 
 <!--
     
